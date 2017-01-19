@@ -1,6 +1,8 @@
 #from
 #http://usingpython.com/programs/
 #http://usingpython.com/dl/animBanner.py
+#Modified by William Muhlbach
+
 #----------------------------------------------
 # Animated Banner Program
 # More programs at UsingPython.com/programs
@@ -36,14 +38,14 @@ message = "hello!".upper()
 printedMessage = [ "","","","","","","" ]
 
 #import the file that contains the pretty ascii letters
-import letters
+from letters import subzero
 
 #build up the printed banner. to do this, the 1st row of the
 #display is created for each character in the message, followed by
 #the second line, etc..
 for row in range(7):
     for char in message:
-        printedMessage[row] += (str(characters[char][row]) + "  ")
+        printedMessage[row] += (str(subzero[char][row]) + "  ")
 
 #the offset is how far to the right we want to print the message.
 #initially, we want to print the message just off the display.
