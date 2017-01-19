@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 '''Author=William Muhlbach'''
-try:
-    num=int(input("What number would you like to use? \n"))
-except(ValueError):
-    print("Sorry, but I need an integer!")
-
+num=0
+while num<=0:
+    try:
+        num=int(input("What number would you like to use?\n(Please use a positive integer.)\n"))
+    except(ValueError):
+        pass
 while num!=1:
     if num%2==0:
-        num=num/2
+        num/=2
     elif num%2==1:
-        num=num*3+1
+        num*=3
+        num+=1
     else:
         print("ERROR")
         exit()
