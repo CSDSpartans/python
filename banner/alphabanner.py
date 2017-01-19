@@ -1,4 +1,6 @@
-# from http://usingpython.com/programs/      http://usingpython.com/dl/animBanner.py
+#from
+#http://usingpython.com/programs/
+#http://usingpython.com/dl/animBanner.py
 #----------------------------------------------
 # Animated Banner Program
 # More programs at UsingPython.com/programs
