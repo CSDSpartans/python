@@ -35,58 +35,8 @@ message = "hello!".upper()
 #initially, these are empty.
 printedMessage = [ "","","","","","","" ]
 
-#a dictionary mapping letters to their 7-line
-#banner display equivalents. each letter in the dictionary
-#maps to 7 strings, one for each line of the display.
-characters = { " " : [ " ",
-                       " ",
-                       " ",
-                       " ",
-                       " ",
-                       " ",
-                       " " ],
-
-               "E" : [ "*****",
-                       "*    ",
-                       "*    ",
-                       "*****",
-                       "*    ",
-                       "*    ",
-                       "*****" ],
-               
-               "H" : [ "*   *",
-                       "*   *",
-                       "*   *",
-                       "*****",
-                       "*   *",
-                       "*   *",
-                       "*   *" ], 
-
-               "O" : [ "*****",
-                       "*   *",
-                       "*   *",
-                       "*   *",
-                       "*   *",
-                       "*   *",
-                       "*****" ],
-
-               "L" : [ "*    ",
-                       "*    ",
-                       "*    ",
-                       "*    ",
-                       "*    ",
-                       "*    ",
-                       "*****" ],
-
-               "!" : [ "  *  ",
-                       "  *  ",
-                       "  *  ",
-                       "  *  ",
-                       "  *  ",
-                       "     ",
-                       "  *  " ]
-               
-               }
+#import the file that contains the pretty ascii letters
+import letters
 
 #build up the printed banner. to do this, the 1st row of the
 #display is created for each character in the message, followed by
