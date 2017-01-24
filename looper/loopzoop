@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+
+import random
+import letters as le
+
+colors=[
+    "\033[31m", 
+    "\033[32m", 
+    "\033[33m", 
+    "\033[34m", 
+    "\033[35m", 
+    "\033[36m", 
+    "\033[37m", 
+    "\033[38m" 
+    ]
+
+def randomizer():
+    while True:
+        char = random.choice(le.characters)
+        print(random.choice(colors) + char, end="")
+
+try:
+    randomizer()
+except(KeyboardInterrupt, EOFError):
+    print("\nBinary Over")
+    exit()
