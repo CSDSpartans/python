@@ -1,2 +1,2 @@
-# python3
-Our python work
+# CSD's Python 3 Repo
+Our python work done in class.
