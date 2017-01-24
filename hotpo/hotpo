@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 '''Author=William Muhlbach'''
+print("What number would you like to use?")
 num=0
 while num<=0:
     try:
-        num=int(input("What number would you like to use?\n(Please use a positive integer.)\n"))
+        num=int(input("(Please use a positive integer)\n"))
     except(ValueError):
         pass
 while num!=1:
