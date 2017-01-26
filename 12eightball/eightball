@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+
+import random as r
+import skilstak.colors as c
+
+answers = ["yes","no","maybe","it is inevitable","ask again later","i can neither confirm nor deny that statement","try again"]
+
+def eightball():
+    print(c.clear + "Welcome to the magical eightball")
+    question = input("What is your question?\n>> ")
+    if "koik" in question.lower() or "kirk" in question.lower():
+        print("Who is koik?")
+    else:
+        answer = r.choice(answers)
+        print(answer)
+    input("[Press enter to continue]")
+
+try:
+    while True:
+        eightball()
+except (KeyboardInterrupt, EOFError):
+    print("Thanks for playing")
