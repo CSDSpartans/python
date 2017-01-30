@@ -1,6 +1,4 @@
-#from
-#http://usingpython.com/programs/
-#http://usingpython.com/dl/animBanner.py
+#from usingpython.com/dl/animBanner.py
 #Modified by William Muhlbach
 
 #----------------------------------------------
@@ -11,7 +9,6 @@
 #----------------------------------------------------------------
 # Challenges:
 #
-# 1. Change the display width to 5. Note what happens.
 # 2. Add more letters to the characters dictionary.
 # 3. Make a banner for your name, or a chosen message.
 # 4. Allow the user to enter their message.
@@ -22,15 +19,15 @@
 
 #allows us to clear the console screen.
 import os
-
+import sys
 import time
 
 #the width of the display
 #(the windows console is 79 characters wide).
-WIDTH = 79
+WIDTH=79
 
 #the message we wish to print
-message = "hello!".upper()
+message="hello!".upper()
 
 #the printed banner version of the message
 #this is a 7-line display, stored as 7 strings
