@@ -10,4 +10,4 @@ if 'salsa' in input("What is your question? >>>").lower():
     print("███████║██║  ██║███████╗███████║██║  ██║██╗")
     print("╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝")
 else:
-    print=random.choice(answers)
+    print(random.choice(answers))
