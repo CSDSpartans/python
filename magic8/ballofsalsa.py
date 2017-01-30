@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import random
-answers = ["Salsa", "Salsa!", "SALSA","DID SOME BODY SAY SALSA?!"]
+answers = ["Salsa","Salsa!","SALSA","DID SOME BODY SAY SALSA?!","meme"]
 print("Welcome to the Ball of Salsa!")
 if 'salsa' in input("What is your question? >>>").lower():
     print("███████╗ █████╗ ██╗     ███████╗ █████╗ ██╗")
