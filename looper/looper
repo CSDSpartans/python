@@ -21,7 +21,7 @@ def randomcolorpicker():
 def randomizer():
     while True:
         char = random.choice(le.characters)
-        print(randomcolorpicker() + char, end="")
+        print(randomcolorpicker() + "\033[32m" + char, end="")
 
 try:
     randomizer()
