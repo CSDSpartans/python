@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+
+import os
+import datetime
+import random
+
+
+    
+# print (datetime.date.today() + datetime.timedelta(6*365/12)).isoformat()    
+
+
+birthday = input("What is your birthday? yyyymmdd\n")
+
+
+print('You will be 6000 days old on:')
+
+# print (datetime.datetime(2002, 3, 30) + datetime.timedelta((6000)))
+# print (    + datetime.timedelta((6000)))
+print(datetime.datetime((int(birthday[0:4]), int(birthday[4:6]), int(birthday[6:8])) + datetime.timedelta(6000)))
+
