@@ -1,14 +1,10 @@
 #!/usr/bin/env python3
 
-import os
-
 from datetime import datetime
 from datetime import timedelta
 
-    
 print('22000 days from today is:')
 print(datetime.now() + timedelta(days=22000))
-
 
 birthday = input("What is your birthday? YYYYMMDD \n")
 
@@ -17,5 +13,6 @@ print (birthday + timedelta(days=22000))
 year=int(birthday[0:4])
 month=int(birthday[4:6])
 day=int(birthday[6:8])
-
-print(datetime(year,month,day)+timedelta(days=22000)))
+print("Your birthday is "+year+"/"+month+"/"+day+"?")
+if input("(Y/n)") in ("Y","y","",None):
+    print(datetime(year,month,day)+timedelta(days=22000)))
