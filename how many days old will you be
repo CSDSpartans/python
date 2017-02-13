@@ -1,21 +1,19 @@
 #!/usr/bin/env python3
 
-
 import os
-import datetime
-import random
 
+from datetime import datetime
+from datetime import timedelta
 
     
-# print (datetime.date.today() + datetime.timedelta(6*365/12)).isoformat()    
+print('22000 days from today is:')
+print (datetime.now() + timedelta(days=22000))
 
 
-birthday = input("What is your birthday? yyyymmdd\n")
+birthday = input("What is your birthday? YYYYMMDD \n")
 
+#print('You will be 22000 days old on:')
+print (birthday + timedelta(days=22000))
 
-print('You will be 6000 days old on:')
-
-# print (datetime.datetime(2002, 3, 30) + datetime.timedelta((6000)))
-# print (    + datetime.timedelta((6000)))
-print(datetime.datetime((int(birthday[0:4]), int(birthday[4:6]), int(birthday[6:8])) + datetime.timedelta(6000)))
-
+#print(datetime((int(birthday[0:4]), int(birthday[4:6]), int(birthday[6:8])) + \
+#timedelta(days=22000)))
