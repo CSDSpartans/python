@@ -7,7 +7,7 @@ from datetime import timedelta
 
     
 print('22000 days from today is:')
-print (datetime.now() + timedelta(days=22000))
+print(datetime.now() + timedelta(days=22000))
 
 
 birthday = input("What is your birthday? YYYYMMDD \n")
