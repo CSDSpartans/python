@@ -9,5 +9,6 @@ while True:
     if cl.Goons.hp <=0:
         print("Logan has slayed the Goons")
         t.sleep(3)
+        break
         exit()
     
