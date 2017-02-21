@@ -1,10 +1,12 @@
+
 #original author: William Mulbach
+#I just changed this so it's easier to play with.
 from datetime import datetime
 
 from datetime import timedelta
 
 daysOld = 0
-#You can change the daysOld to whatever number you like
+#You can change the daysOld to whatever number you like.
 
 print(str(daysOld) + ' days from today is:')
 
